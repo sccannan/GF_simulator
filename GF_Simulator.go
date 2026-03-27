@@ -933,10 +933,6 @@ func metrics_Calc(packet Packet, topology []*Node) []float64{
 	
 	//Cache Hit
 	cache_Hit := float64(packet.Cache_Hit)
-	
-	fmt.Println(packet.Name)
-	fmt.Println(packet.Destination_Str)
-	
 	return []float64{latency, packet_success, path_stretch, packet_size, pressure_Count, pressure_Mode_Used, nodes_Visited, hops_Collapsed, cache_Hit}
 }
 //----------------------------------------------
